@@ -43,7 +43,7 @@ export const todoListSlice = createSlice({
         }
         return todoItem;
       });
-      //   localStorage.setItem('todos', JSON.stringify(state.todos));
+      localStorage.setItem('todos', JSON.stringify(state.todos));
     },
     updateTodoItem: (state, action) => {
       console.log(action.payload);
